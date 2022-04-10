@@ -15,9 +15,9 @@ composer install
 
 ## Usage
 
-# edit data.txt
+### edit data.txt
 
-# run project
+### run project
 in root you can use this command
 ```
 php index.php
