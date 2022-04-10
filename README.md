@@ -4,7 +4,7 @@ Algorithm design lesson project
 
 ## Installation
 
-Use the package manager [composer](https://pip.pypa.io/en/stable/) to install.
+Use the package manager [composer]https://getcomposer.org/download/) to install.
 
 ```bash
 composer install
