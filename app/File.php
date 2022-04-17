@@ -24,7 +24,7 @@ class File
         for ($count = fgets($file); $count-- > 0; feof($file)) {
             $this->setPoints(...$this->filter(fgets($file)));
         }
-        $this->setCorners(...$this->filter(fgets($file)));
+        $this->setRectangle(...$this->filter(fgets($file)));
 
         fclose($file);
     }
@@ -34,7 +34,7 @@ class File
         $this->points[] = new Point($x, $y);
     }
 
-    private function setCorners(float $x1, float $y1, float $x2, float $y2)
+    private function setRectangle(float $x1, float $y1, float $x2, float $y2)
     {
         $this->rectangle->leftDown->x = $x1;
         $this->rectangle->leftDown->y = $y1;
